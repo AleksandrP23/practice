@@ -1,0 +1,42 @@
+@import url("normalize.css");
+@import url("fonts.css");
+
+.section{
+	min-width: 1100px;
+	min-height: 650px;
+	background: url(../img/bg.png) center no-repeat;
+}
+
+.section ul{
+	display: flex;
+	color: #ffffff;
+}
+
+.section ul li {
+	margin: 0 auto;
+	font-family: Ubuntu-Medium;
+	text-transform: uppercase;
+}
+
+.header{
+	display: flex;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+}
+
+h1{
+	color: #ffffff;
+	font-family: Gagalin-Regular;
+}
+
+h1 > span {
+	font-family: Lifehack-Medium;
+}
+
+.burger {
+	margin-left: 19px;
+    margin-top: -7px;
+}
