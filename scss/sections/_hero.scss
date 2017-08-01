@@ -1,5 +1,5 @@
 .hero {
-  background-image: url('../img/bg/hero_bg.png');
+  background-image: url('../img/bg1.png');
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
@@ -105,5 +105,60 @@
   font-size: 65px;
   font-weight: 500;
   line-height: 1;
+}
+
+.mini-map {
+  position: fixed;
+  right: 50px;
+  top: 90px;
+}
+
+.mini-map__list {
+  padding: 0;
+  margin: 0;
+  list-style: none; 
+}
+
+.mini-map__item {
+  margin-bottom: 5px; 
+}
+
+.mini-map__item:last-child {
+    margin-bottom: 0; 
+}
+
+.mini-map__link {
+  position: relative;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background-color: none;
+  border: 1px solid transparent; 
+    &:hover {
+      border-color: #ffffff;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; 
+    }
+
+}
+  
+.mini-map__link_active {
+    border-color: #ffffff; 
+}
+
+.mini-map__decor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); 
 }
 

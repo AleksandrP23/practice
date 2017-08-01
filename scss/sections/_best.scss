@@ -1,5 +1,5 @@
 .best {
-  background-image: url('../img/bg/best-bg.png');
+  background-image: url('../img/bg2.png');
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
@@ -12,4 +12,33 @@
   color: #2f3234;
   padding: 0;
   margin-bottom: rem(60px);
+}
+
+.best__content {
+  width: 940px;
+  height: 406px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.content_meat, .content_hand, .content_natural {
+  width: 300px;
+  text-align: center;
+}
+
+.best__content h2 {
+    color: #2f3234;
+    font-family: 'Lifehack';
+    font-size: 23.1px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.best__content p{
+  color: #2f3234;
+    font-family: 'Ubuntu';
+    font-size: 14.03px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.7;
 }
