@@ -11,7 +11,8 @@
 .section__title--best {
   color: #2f3234;
   padding: 0;
-  margin-bottom: rem(60px);
+  margin-bottom: 7%;
+  margin-top: 3%;
 }
 
 .best__content {
@@ -19,11 +20,13 @@
   height: 406px;
   display: flex;
   justify-content: space-around;
+  overflow: hidden;
 }
 
 .content_meat, .content_hand, .content_natural {
   width: 300px;
   text-align: center;
+  padding-top: 2px;
 }
 
 .best__content h2 {
@@ -38,7 +41,38 @@
   color: #2f3234;
     font-family: 'Ubuntu';
     font-size: 14.03px;
-    font-weight: 700;
+    font-weight: 300;
     font-style: normal;
     line-height: 1.7;
+}
+
+.content_meat {
+  padding-right: 14px;
+}
+
+.content_meat h2{
+  padding-top: 6px;
+  padding-right: 6px;
+}
+
+.content_hand h2{
+  padding-top: 8px;
+  padding-right: 2px;
+}
+
+.content_hand p{
+  margin-top: -2px;
+}
+
+.content_natural {
+  padding-top: 5px;
+  padding-left: 9px;
+}
+
+.content_natural h2 {
+  padding-top: 18px;
+}
+
+.content_natural p {
+  margin-top: -7px;
 }
