@@ -1,0 +1,23 @@
+.form {
+  background: url("../img/bg7.png") center center no-repeat; }
+
+.form__row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px; }
+
+.form__input {
+  font-size: 16px;
+  padding: 14px;
+  background: #fff;
+  border-radius: 7px;
+  border: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-left: 20px; }
+  .form__input:first-child {
+    margin-left: 0; }

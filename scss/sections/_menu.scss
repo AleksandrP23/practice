@@ -1,0 +1,135 @@
+.menu {
+    background: url('../img/bg5.png') center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.menu__title {
+  position: absolute;
+  top: 4%;
+  left: 9%;
+  color: #fff;
+    
+    @include tablets() {
+        top: 8%;
+        left: 3%;
+    }
+
+    @include phones {
+        top: 5%;
+        left: 13%;
+
+        .section__title {
+            font-size: 50px;
+        }
+    }
+}
+
+.menu__content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.menu-acco {
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+}
+
+.menu-acco__item {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: -8px;
+
+
+    &.active {
+        width: 50%;
+
+        .menu-acco__content {
+            width: 100%;        
+        }
+
+        @include tablets() {
+            width: 100%;
+        }
+    }
+}
+
+.menu-acco__wrap-title {
+    @include tablets() {
+        width: 100%;
+        margin-bottom: rem(50px);
+    } 
+
+    @include phones {       
+        margin-bottom: rem(70px);
+    } 
+}
+
+.menu-acco__title {
+    width: 80px;
+    font-family: 'Gagalin';
+    font-size: rem(40px);
+    line-height: rem(64px);
+    color: #fff; 
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: center no-repeat;
+    background-size: cover;
+    position: relative;
+
+    &::before {
+        content: "";
+        background: rgba(#141414, .7);        
+        display: block;
+        height: 100%;        
+        position: absolute;        
+        width: 100%;
+    }
+
+    @include tablets() {
+        align-items: flex-end;  
+        width: 60px;      
+    } 
+
+    @include phones {
+        align-items: flex-end;  
+        width: 45px;      
+    } 
+}
+
+.menu-acco__deg {    
+    white-space: nowrap;
+    transform: rotate(-90deg);  
+}
+
+.menu-acco__content {
+    background: rgba($dark, .93);
+    display: flex;   
+    justify-content: center;
+    overflow: hidden;
+    width: 0; 
+}
+
+.menu-acco__desc {
+    color: #fff;
+    width: 80%;
+    margin-top: 20%;    
+    line-height: rem(24px);
+    font-size: rem(14px);
+    
+    @include tablets {
+        width: 90%;   
+        font-size: 14px; 
+        line-height: 24px;    
+    } 
+
+    @include phones {
+        line-height: rem(20px);
+        font-size: rem(14px);
+    }
+}

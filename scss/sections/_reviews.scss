@@ -10,6 +10,10 @@
 
 .reviews__item {
   flex-basis: 25%;
+  @include tablets {
+    width: 50%;
+    height: 25%;
+  }
 }
 
 .review {
@@ -41,6 +45,12 @@
   transition: .5s;
   padding: 50px 30px 0px 20px;
   background-color: rgba(0, 1, 5, .7);
+
+  @include tablets {
+    font-size: rem(14px);
+    padding: 0 12%;
+    text-align: center;
+  }
 }
 
 .review__title {
@@ -49,6 +59,10 @@
   margin-bottom: 18px;
   color: #fff;
   margin-top: -6px;
+
+   @include tablets {
+    margin-bottom: rem(14px);
+  }
 }
 
 .review__shorttext {
@@ -58,6 +72,9 @@
   font-weight: 300;
   line-height: rem(24px);
   margin-bottom: 20px;
+  @include phones {
+    display: none;
+  }
 }
 
 .review__view {
