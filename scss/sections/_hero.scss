@@ -12,13 +12,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 2px;
+  padding-top: rem(2px);
 }
 
 .header__logo {
   margin-right: auto;
   padding-top: 1%;
-  margin-left: -6px;
+  margin-left: rem(-6px);
 }
 
 .header__menu {
@@ -44,8 +44,8 @@
     display: inline-block;
     vertical-align: middle;
     content: ' ';
-    @include circle(5px, #fff);
-    margin: 0 12px;
+    @include circle(rem(5px), #fff);
+    margin: 0 rem(12px);
   }
   &:last-child:after {
     display: none;
@@ -54,7 +54,7 @@
 
 .nav__link {
   color: #ffffff;
-  font-size: 13px;
+  font-size: rem(13px);
   font-weight: 500;
   line-height: 1.42;
   text-transform: uppercase;
@@ -85,7 +85,7 @@
   padding-left: 2%;
 
     @include tablets {
-    flex-direction: column;
+
     align-items: center;
     text-align: center;
     padding: 0 20%;
@@ -109,26 +109,26 @@
 .section__title {
   color: #f9b43b;
   font-family: 'Gagalin';
-  font-size: 72px;
+  font-size: rem(72px);
   font-weight: 400;
   line-height: 1.42;
   margin: 0;
-  padding-top: 60px;
+  padding-top: rem(60px);
 }
 
 .hero__description-text {
   color: #ffffff;
   font-family: 'Lifehack';
-  font-size: 62px;
+  font-size: rem(62px);
   font-weight: 500;
   line-height: 1;
-  padding-top: 6px;
+  padding-top: rem(6px);
 }
 
 .mini-map {
   position: fixed;
-  right: 50px;
-  top: 90px;
+  right: rem(50px);
+  top: rem(90px);
 }
 
 .mini-map__list {
@@ -138,7 +138,7 @@
 }
 
 .mini-map__item {
-  margin-bottom: 5px; 
+  margin-bottom: rem(5px); 
 }
 
 .mini-map__item:last-child {
@@ -148,9 +148,9 @@
 .mini-map__link {
   position: relative;
   display: block;
-  width: 16px;
-  height: 16px;
-  border-radius: 8px;
+  width: rem(16px);
+  height: rem(16px);
+  border-radius: rem(8px);
   background-color: none;
   border: 1px solid transparent; 
     &:hover {
@@ -171,9 +171,9 @@
   top: 50%;
   left: 50%;
   display: block;
-  width: 6px;
-  height: 6px;
-  border-radius: 3px;
+  width: rem(6px);
+  height: rem(6px);
+  border-radius: rem(3px);
   background-color: #ffffff;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);

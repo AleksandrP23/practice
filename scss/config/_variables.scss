@@ -1,5 +1,42 @@
+//colors
 $orange: #e25028;
 $yellow: #f8b43a;
 $green: #8ac03e;
 $dark: #2f3234;
 $red: #e35028;
+
+// resolutions
+$desktop: 1200px;
+$laptop: 992px;
+$tablets: 768px;
+$phones: 480px;
+
+//responsive
+@function rem($px) {
+  @return $px / 16px + rem;
+}
+
+// media
+@mixin desktop {
+	@media screen and (max-width: $desktop) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media screen and (max-width: $laptop) {
+		@content;
+	}
+}
+
+@mixin tablets {
+	@media screen and (max-width: $tablets) {
+		@content;
+	}
+}
+
+@mixin phones {
+	@media screen and (max-width: $phones) {
+		@content;
+	}
+}

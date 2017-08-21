@@ -1,3 +1,231 @@
 .burgers {
   background: linear-gradient(180deg,#f9b43b 0,#eb8c38 40%,#eb8c38 60%,#eb8c38 0,#f9b43b);
 }
+.burgers {
+    display: flex; 
+    justify-content: center;
+     
+    background-size: cover; 
+    height: 100vh;
+    margin: 0;
+    min-height: rem(650px);
+           @include tablets {
+                min-height: rem(1025px);
+           }
+           @include phones {
+        min-height: rem(800px);
+    }
+}
+.burgers__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: rem(1050px);
+           @include phones {
+    max-width: rem(480px);
+    }
+
+
+}
+.arrow__burgers-left {
+    transform: rotate(90deg);
+           @include phones {
+   margin-right: rem(-30px);
+    }
+}
+.arrow__burgers-right {
+    transform: rotate(270deg);
+               @include phones {
+   margin-left: rem(-30px);
+    }
+}
+.burgers__content {
+    display: flex;
+    align-items: flex-start;
+             @include tablets {
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+     }
+             @include phones {
+    align-items: flex-start;
+    }
+} 
+.burgers__img {
+    width: rem(500px);
+           @include phones {
+   width: rem(400px);
+    }
+}
+.burgers__column-left {
+    position: relative;
+    padding: rem(80px) 0;
+    @include tablets {
+    padding: rem(80px) 0 0 0;
+    }
+       @include phones {
+    width: rem(460px);
+    max-width: rem(480px);
+    text-align: center;
+    padding: rem(110px) 0 0 0;
+    }
+}
+.burgers__composition {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+ }
+.burgers__product {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(rem(90px), 0);
+    display: none;
+    border-radius: rem(5px);
+    background-color: white;
+    opacity: 0.902;
+    padding: rem(20px);
+}
+.burgers__product-name {
+     font-family:'ubuntu';
+     padding: 0 rem(20px);
+}
+.burgers__product-weight {
+    text-align: right;
+    padding-left: rem(20px);
+    min-width: rem(70px);
+}
+
+.burgers__composition-batton {
+    width: rem(90px);
+    height: rem(90px);
+    background-color: #f08c33;
+    border-radius: rem(5px);
+    text-align: center;
+    padding-top: rem(10px);
+}
+.burgers__composition-title {
+    font-family: 'gagalin';
+    font-size: rem(14px);
+    color: #fff;
+}
+.burgers__composition-img {
+    width: rem(46px);
+    height: rem(45px);
+}
+.burgers__composition:hover  .burgers__product {
+    display: block;
+}
+.burgers__composition:hover  .burgers__composition-batton {
+    background-color: #e35028;;
+}
+
+.burgers__kkal {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: rem(90px);
+    height: rem(90px);
+    opacity: 0.4;
+    border-radius: rem(5px);
+    text-align: center;
+    padding-top: rem(10px);
+                 @include tablets {
+    top: 0;
+    right: 0;
+    left: initial;
+    }
+
+ }
+.burgers__kkal-title {
+    font-family:'gagalin';
+    font-size: rem(14px);
+    margin-top: rem(10px);
+    color: #fff;
+}
+.burgers__kkal-amount {
+    font-family:'gagalin';
+    font-size: rem(14px);
+    margin-top: rem(-30px);
+    color: #fff;
+}
+.burgers__kkal-img {
+    width: rem(60px);
+    height: rem(60px);
+}
+.burgers__column-right {
+
+    display: flex;
+    flex-direction: column;
+    @include tablets {
+    align-items: center;
+    }
+       @include phones {
+   max-width: rem(480px);
+    }
+    
+
+}
+.burgers__info {
+    display: flex;
+    flex-direction: column;
+    @include tablets {
+    align-items: center;
+    }
+    @include phones {
+    max-width: rem(480px);
+    }
+
+}
+
+.burgers__title--burger {
+    color: #fff;
+    width: rem(380px);
+    line-height: rem(60px);
+    margin-bottom: rem(40px);
+        @include tablets {
+    margin-bottom: rem(20px);
+    }
+       @include phones {
+    font-size: rem(50px);
+    }
+}
+.burgers__description {
+    font-family:'ubuntu';
+    color: #fff;
+    width: rem(470px);
+    font-size: rem(14px);
+    line-height: rem(24px);
+          @include tablets {
+    width: rem(600px);
+    text-align: center;
+    margin-bottom: rem(20px);
+          }
+         @include phones {
+     width: rem(460px);
+      margin-bottom: 0;
+    }
+}
+.burgers__price {
+    font-family: 'gagalin';
+    font-size: rem(72px);
+    color: #e55e2c;
+    margin-right: rem(10px);
+            @include phones {
+    font-size: rem(50px);
+    }
+}
+.burgers__currency {
+    font-family: 'gagalin';
+    font-size: rem(30px);
+    color: #e55e2c;
+    margin-right: rem(20px);
+
+}
+.burgers__order {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    
+}

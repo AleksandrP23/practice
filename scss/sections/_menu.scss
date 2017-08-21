@@ -21,7 +21,7 @@
         left: 13%;
 
         .section__title {
-            font-size: 50px;
+            font-size: rem(50px);
         }
     }
 }
@@ -42,7 +42,7 @@
 .menu-acco__item {
     display: flex;
     justify-content: flex-end;
-    margin-right: -8px;
+    margin-right: rem(-8px);
 
 
     &.active {
@@ -93,12 +93,12 @@
 
     @include tablets() {
         align-items: flex-end;  
-        width: 60px;      
+        width: rem(60px);      
     } 
 
     @include phones {
         align-items: flex-end;  
-        width: 45px;      
+        width: rem(45px);      
     } 
 }
 
@@ -124,8 +124,8 @@
     
     @include tablets {
         width: 90%;   
-        font-size: 14px; 
-        line-height: 24px;    
+        font-size: rem(14)px; 
+        line-height: rem(24)px;    
     } 
 
     @include phones {

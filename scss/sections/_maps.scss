@@ -14,15 +14,15 @@
 .footer__container {
   display: flex;
   justify-content: space-between;
-  width: 940px; }
+  width: rem(940px); }
 
 .footer__adress {
   color: white;
-  margin-bottom: 5px; }
+  margin-bottom: rem(5px); }
 
 .footer__contact {
-  padding: 6px 0;
-  font-size: 14px; }
+  padding: rem(6px) 0;
+  font-size: rem(14px); }
 
 .footer__phone {
   color: #e45028;
@@ -45,12 +45,6 @@
     opacity: 0.3;
     margin-left: rem(20px);
 
-    /* Почему если убирать так margin, у всех элементов он убирается?
-    &:first-child {
-        margin-left: rem(0px);
-    }
-    */
-
     &:hover {
         opacity: 1;
     }
@@ -63,9 +57,9 @@
 
 .social__item {
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-left: 18px; }
+  width: rem(20px);
+  height: rem(20px);
+  margin-left: rem(18px); }
 
 .social__item-vk {
   background: url("../img/vk.svg") center center no-repeat;
@@ -84,4 +78,4 @@
   background-size: cover; }
 
 .social__list {
-  padding: 14px 0; }
+  padding: rem(14px) 0; }
